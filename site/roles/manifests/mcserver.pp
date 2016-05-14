@@ -1,0 +1,3 @@
+#doc
+class roles::mcserver{
+}

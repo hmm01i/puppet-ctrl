@@ -1,3 +1,4 @@
+#just the base
 class roles::base{
-notify{'base role':}
+include ::profiles::base
 }
