@@ -1,0 +1,6 @@
+modules/
+bin/
+cache/
+.bundle/
+*~
+Gemfile.lock

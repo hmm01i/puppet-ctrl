@@ -1,0 +1,7 @@
+---
+cachedir: 'cache/r10k'
+
+sources:
+  base:
+    remote: 'https://github.com/hmm01i/puppet-ctrl.git'
+    basedir: 'environments'
