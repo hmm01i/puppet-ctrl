@@ -2,5 +2,6 @@ modules/
 bin/
 cache/
 .bundle/
+.tmp/
 *~
 Gemfile.lock
