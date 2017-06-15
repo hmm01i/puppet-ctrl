@@ -9,6 +9,6 @@ class profiles::gpg {
   }
 
   service {'pcscd':
-    ensure => enable
+    ensure => 'running'
   }
 }
