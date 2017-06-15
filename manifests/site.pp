@@ -1,7 +1,9 @@
 node default {
-  if $role {
-    class { "::roles::${role}": }
-  } else {
-    notify { "no role set": }
+  include ::profiles::base
+  if has_key($facts, 'role') {
+    $effective_role=$facts['role']
+    } else {
+      $effective_role= 'base'
   }
+    class { "::roles::${effective_role}": }
 }
