@@ -1,5 +1,5 @@
 #doc
-class roles::laptop{
+class roles::workstation{
   include ::profiles::base
   include ::profiles::workstation
 }
