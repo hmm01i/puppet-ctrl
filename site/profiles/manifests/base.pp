@@ -5,7 +5,8 @@ class profiles::base{
     'Ubuntu', 'LinuxMint': {
       include ::apt
       apt::ppa { 'ppa:aacebedo/fasd':
-        before => Package['fasd']
+        options => '-y',
+        before  => Package['fasd']
       }
     }
      default: {}
