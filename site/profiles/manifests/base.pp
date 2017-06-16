@@ -4,7 +4,9 @@ class profiles::base{
   case $facts['os']['name'] {
     'Ubuntu', 'LinuxMint': {
       include ::apt
-      apt::ppa { 'ppa:aacebedo/fasd':}
+      apt::ppa { 'ppa:aacebedo/fasd':
+        before => Package['fasd']
+      }
     }
      default: {}
   }
