@@ -1,7 +1,7 @@
 #base requirements
 class profiles::base{
   include ::stdlib
-  case $facts['os']['id'] {
+  case $facts['os']['name'] {
     'Ubuntu', 'LinuxMint': {
       include ::apt
       apt::ppa { 'ppa:aacebedo/fasd':}
