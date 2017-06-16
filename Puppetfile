@@ -11,3 +11,7 @@ mod 'puppet',
 mod 'concat',
   :git    => 'https://github.com/puppetlabs/puppetlabs-concat.git',
   :commit => '3d1a90ae05df47ee94fc1c1154ea9e4cbc46dbde'
+
+mod 'apt',
+  :git => 'https://github.com/puppetlabs/puppetlabs-apt.git',
+  :commit => 'd7af638793b6f5b6c5af6562923fa9ee0b025e1d'
