@@ -3,11 +3,8 @@ class profiles::base{
   include ::stdlib
   case $facts['os']['name'] {
     'Ubuntu', 'LinuxMint': {
+      include ::profiles::ppa
       include ::apt
-      apt::ppa { 'ppa:aacebedo/fasd':
-        options => '-y',
-        before  => Package['fasd']
-      }
     }
      default: {}
   }
